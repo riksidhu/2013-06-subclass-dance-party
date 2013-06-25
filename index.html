@@ -49,10 +49,14 @@
           );
 
           $('body').append(dancer.$node);
-          dancers.push(dancer.$node);
+          dancers.push(dancer);
         });
+
+
        $(".LineupButton").on("click", function(event){
-          console.log("Clicked Lineup Button");
+          for(var i = 0; i < dancers.length;i++){
+            dancers[i].lineup();
+        }
        });
       });
     </script>

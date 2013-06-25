@@ -11,7 +11,9 @@ SecondBlinkDancer.prototype.step = function() {
 };
 
 SecondBlinkDancer.prototype.lineup = function() {
-  Dancer.prototype.lineup.call(this);
+  //Dancer.prototype.lineup.call(this);
   //debugger;
-  this.$node.addClass('alightleft');
+  this.$node.css("left","0px");
+  console.log('added second class');
+  //addClass('rightseconddancer').removeClass('seconddancer')
 };

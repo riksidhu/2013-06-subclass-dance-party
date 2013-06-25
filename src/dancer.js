@@ -14,7 +14,7 @@ var Dancer = function(top, left, timeBetweenSteps){
   // };
 
   this.step();
-  this.lineup();
+  //this.lineup();
 
   // dancer.setPosition = function(top, left){
   //    Use css top and left properties to position our <span> tag
@@ -33,12 +33,12 @@ var Dancer = function(top, left, timeBetweenSteps){
   //return dancer;
 };
 
-Dancer.prototype.lineup = function(){
-  // the basic dancer doesn't do anything interesting at all on each step,
-  // it just schedules the next step
-  //var that = this;
-  //setTimeout(function(){ that.step(); }, this.timeBetweenSteps);
-};
+// Dancer.prototype.lineup = function(){
+//   var that = this;
+//   (function(){
+//     that.lineup();
+//   })();
+// };
 
 Dancer.prototype.step = function(){
   // the basic dancer doesn't do anything interesting at all on each step,

@@ -32,8 +32,7 @@ BlinkyDancer.prototype.step = function(){
 };
 
 BlinkyDancer.prototype.lineup = function(){
-  _.each(window.dancers, function(key){
-    //debugger;
-    console.log(this.dancers[key].style)
-  },this);
+  //Dancer.prototype.lineup.call(this);
+  this.$node.css("left","").css("right", "0px");
+  console.log('added class');
 };

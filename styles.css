@@ -26,6 +26,13 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+/*.leftdancer{
+  border:20px solid red;
+  border-radius:10px;
+  position:absolute;
+  left: 10px;
+}*/
+
 .seconddancer{
   border:20px solid yellow;
   border-radius:10px;
@@ -35,7 +42,12 @@ body, a:link, a:visited, a:active{
   height: 194px;
 }
 
-.alightleft{
+/*.rightseconddancer {
+  border:20px solid yellow;
+  border-radius:10px;
   position:absolute;
-  left: 0px;
-}
+  background: url('dog.png');
+  width: 260px;
+  height: 194px;
+  right: 10px;
+}*/
