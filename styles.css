@@ -21,21 +21,17 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:20px solid red;
-  border-radius:10px;
   position:absolute;
 }
 
-/*.leftdancer{
-  border:20px solid red;
-  border-radius:10px;
-  position:absolute;
-  left: 10px;
-}*/
+.bone{
+  background: url('bone.png');
+  width: 244px;
+  height:251px;
+}
 
 .seconddancer{
-  border:20px solid yellow;
-  border-radius:10px;
+  border:none;
   position:absolute;
   background: url('dog.png');
   width: 260px;

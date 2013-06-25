@@ -10,9 +10,9 @@ describe("SecondBlinkDancer", function() {
     expect(secondblinkyDancer.$node).toEqual(jasmine.any(jQuery));
   });
   
-  it("should have a step function that makes its node blink", function() {
-    spyOn(secondblinkyDancer.$node, 'toggle');
-    secondblinkyDancer.step();
-    expect(secondblinkyDancer.$node.toggle).toHaveBeenCalled();
-  });
+  // it("should have a step function that makes its node blink", function() {
+  //   spyOn(secondblinkyDancer.$node, 'toggle');
+  //   secondblinkyDancer.step();
+  //   expect(secondblinkyDancer.$node.toggle).toHaveBeenCalled();
+  // });
 });

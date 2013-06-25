@@ -15,6 +15,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps){
   // };
 
   //return blinkyDancer;
+  this.$node.onclick(function(){console.log("got here");});
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
@@ -28,7 +29,7 @@ BlinkyDancer.prototype.step = function(){
   /* toggle() is a jQuery method to show/hide the <span> tag.
    * See http://api.jquery.com/category/effects/ for this and
    * other effects you can use on a jQuery-wrapped html tag. */
-  this.$node.toggle();
+  this.$node.addClass('bone').toggle();
 };
 
 BlinkyDancer.prototype.lineup = function(){
@@ -36,3 +37,4 @@ BlinkyDancer.prototype.lineup = function(){
   this.$node.css("left","").css("right", "0px");
   console.log('added class');
 };
+

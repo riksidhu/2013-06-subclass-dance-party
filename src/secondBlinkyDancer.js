@@ -7,7 +7,7 @@ SecondBlinkDancer.prototype.constructor = SecondBlinkDancer;
 SecondBlinkDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   //debugger;
-  this.$node.addClass('seconddancer').toggle();
+  this.$node.addClass('seconddancer');
 };
 
 SecondBlinkDancer.prototype.lineup = function() {
@@ -17,3 +17,4 @@ SecondBlinkDancer.prototype.lineup = function() {
   console.log('added second class');
   //addClass('rightseconddancer').removeClass('seconddancer')
 };
+
