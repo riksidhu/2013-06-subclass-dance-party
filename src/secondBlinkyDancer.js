@@ -9,3 +9,9 @@ SecondBlinkDancer.prototype.step = function() {
   //debugger;
   this.$node.addClass('seconddancer').toggle();
 };
+
+SecondBlinkDancer.prototype.lineup = function() {
+  Dancer.prototype.lineup.call(this);
+  //debugger;
+  this.$node.addClass('alightleft');
+};

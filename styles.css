@@ -21,13 +21,21 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:20px solid red;
   border-radius:10px;
   position:absolute;
 }
 
 .seconddancer{
-  border:10px solid yellow;
+  border:20px solid yellow;
   border-radius:10px;
   position:absolute;
+  background: url('dog.png');
+  width: 260px;
+  height: 194px;
+}
+
+.alightleft{
+  position:absolute;
+  left: 0px;
 }

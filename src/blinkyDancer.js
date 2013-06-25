@@ -31,3 +31,9 @@ BlinkyDancer.prototype.step = function(){
   this.$node.toggle();
 };
 
+BlinkyDancer.prototype.lineup = function(){
+  _.each(window.dancers, function(key){
+    //debugger;
+    console.log(this.dancers[key].style)
+  },this);
+};

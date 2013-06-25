@@ -2,7 +2,7 @@
 var Dancer = function(top, left, timeBetweenSteps){
   //var whoami = this.whoami = Math.floor(Math.random() * 100);
   // var dancer = {};
-
+  //260/194
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
   this.timeBetweenSteps = timeBetweenSteps;
@@ -14,6 +14,7 @@ var Dancer = function(top, left, timeBetweenSteps){
   // };
 
   this.step();
+  this.lineup();
 
   // dancer.setPosition = function(top, left){
   //    Use css top and left properties to position our <span> tag
@@ -30,6 +31,13 @@ var Dancer = function(top, left, timeBetweenSteps){
   this.setPosition(top, left);
 
   //return dancer;
+};
+
+Dancer.prototype.lineup = function(){
+  // the basic dancer doesn't do anything interesting at all on each step,
+  // it just schedules the next step
+  //var that = this;
+  //setTimeout(function(){ that.step(); }, this.timeBetweenSteps);
 };
 
 Dancer.prototype.step = function(){
@@ -49,3 +57,4 @@ Dancer.prototype.setPosition = function(top, left){
   };
   this.$node.css(styleSettings);
 };
+
