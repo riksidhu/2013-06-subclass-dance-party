@@ -15,7 +15,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps){
   // };
 
   //return blinkyDancer;
-  this.$node.onclick(function(){console.log("got here");});
+  //this.$node.onclick(function(){console.log("got here");});
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);

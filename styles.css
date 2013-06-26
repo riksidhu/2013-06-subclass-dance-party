@@ -38,12 +38,23 @@ body, a:link, a:visited, a:active{
   height: 194px;
 }
 
-/*.rightseconddancer {
-  border:20px solid yellow;
-  border-radius:10px;
-  position:absolute;
-  background: url('dog.png');
-  width: 260px;
-  height: 194px;
-  right: 10px;
-}*/
+.effects{
+  -webkit-animation-name: roll-in, scale-up;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes roll-in {
+  0%{-webkit-transform: translateX(-200px)rotate(0deg);}
+  100%{-webkit-transform: translateX(0px)rotate(360deg);}
+}
+
+@-webkit-keyframes scale-up{
+  0%{-webkit-transform:scale(1);}
+  25%{-webkit-transform:scale(1.2);}
+  60%{-webkit-transform:scale(1);}
+  100%{-webkit-transform:scale(1.2);}
+}
+

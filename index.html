@@ -15,8 +15,8 @@
     <div class="topbar">
       <span class="title">object dance party</span>
       <a href="#" class="LineupButton" >Line up Doggie</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SecondBlinkDancer">add a second dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Throw a Bone</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SecondBlinkDancer">Add a Dog</a>
     </div>
 
     <script>
@@ -59,9 +59,11 @@
         }
        });
 
-       $('body').on("click", ".seconddancer", function(event){
-
-          console.log(event);
+       $('body').on("mouseover", ".seconddancer", function(event){
+          for(var i = 0; i < dancers.length;i++){
+            if(dancers[i] instanceof SecondBlinkDancer)
+              dancers[i].cooleffects();
+          }
        });
       });
     </script>
